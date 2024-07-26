@@ -199,9 +199,9 @@ pipelineJob('Autoscaler-Helm') {
     }
 }
 
-pipelineJob('Webapp-CVE') {
-    displayName('Webapp CVE ')
-    description('Pipeline to build Webapp')
+pipelineJob('Operator-CVE') {
+    displayName('Operator CVE ')
+    description('Pipeline to build Operator')
     logRotator {
         daysToKeep(30)
         numToKeep(10)
@@ -225,9 +225,9 @@ pipelineJob('Webapp-CVE') {
     }
 }
 
-pipelineJob('Helm-CVE') {
-    displayName('Helm CVE')
-    description('Pipeline to build helm chart for helm')
+pipelineJob('HelmOperator-CVE') {
+    displayName('HelmOperator CVE')
+    description('Pipeline to build helm chart for HelmOperator')
     logRotator {
         daysToKeep(30)
         numToKeep(10)
