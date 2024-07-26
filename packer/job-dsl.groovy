@@ -224,10 +224,10 @@ pipelineJob('Operator-CVE') {
         githubPush()
     }
 }
-
 pipelineJob('HelmOperator-CVE') {
     displayName('HelmOperator CVE')
     description('Pipeline to build helm chart for HelmOperator')
+
     logRotator {
         daysToKeep(30)
         numToKeep(10)
